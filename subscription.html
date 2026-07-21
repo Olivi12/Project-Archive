@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <nav class="nav-container">
+          <div class="top-nav">
+            <h1 class="logo">GY'Oreal</h1>
+            <button class="menu-toggle">☰</button>
+          </div>
+
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tips.html">Tips & Trends</a></li>
+            <li><a href="subscription.html">Subscription</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="hero-subscription">
+        <div class="hero-subscription-content">
+          <h1>Get Exclusive Access To New Collections & Beauty Insights</h1>
+          <p>Every detail, thoughtfully personalized for you</p>
+          <a href="#form-container" class="btn-subscription"
+            >Claim Your Offer</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="benefit">
+        <h1>Benefits For Exclusive Members</h1>
+        <div class="benefit-container">
+          <div class="benefit-item">
+            <img src="img1subspage.png" alt="Image 1" />
+            <h3>Premium Offers</h3>
+            <p>
+              Gain early access to limited edition drops and 20% off the entire
+              GY’Oreal catalog
+            </p>
+          </div>
+
+          <div class="benefit-item">
+            <img src="img2subspage.png" alt="Image 2" />
+            <h3>Exclusive Beauty Insights</h3>
+            <p>
+              Tips and techniques curated by our lead editorial stylists just
+              for you
+            </p>
+          </div>
+
+          <div class="benefit-item">
+            <img src="img3subspage.png" alt="Image 3" />
+            <h3>Skin Type Analysis</h3>
+            <p>
+              Discover your skin type through our experts analysis to guide your
+              beauty choices with confidence
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscription-form">
+        <h1>Secure Your Invitation</h1>
+        <p>
+          Complete your profile below to join GY’Oreal and receive a
+          complimentary signature burgundy lipstick
+        </p>
+        <div id="form-container">
+          <form>
+            <div class="input-container">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="category">Preferred Category</label>
+              <div class="select-wrapper">
+                <select name="category" id="category">
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="lips">Lip Products</option>
+                  <option value="eyes">Eye Products</option>
+                  <option value="face">Face & Foundation</option>
+                  <option value="brushes">Brushes & Tools</option>
+                  <option value="all">All Products</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-container">
+              <label>Newsletter Frequency</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="frequency" value="weekly" />
+                  <span class="radio-custom"></span>
+                  Weekly
+                </label>
+
+                <label class="radio-label">
+                  <input type="radio" name="frequency" value="monthly" />
+                  <span class="radio-custom"></span>
+                  Monthly
+                </label>
+
+                <label class="radio-label">
+                  <input type="radio" name="frequency" value="occasionally" />
+                  <span class="radio-custom"></span>
+                  Occasionally
+                </label>
+              </div>
+            </div>
+
+            <div class="policy-container">
+              <input type="checkbox" name="policy" id="policy" />
+              <label for="policy">I agree with Terms and Privacy Policy</label>
+            </div>
+
+            <button type="submit" id="btn-submit">Subscribe Now</button>
+          </form>
+        </div>
+        <script src="script.js"></script>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h1>GY’Oreal</h1>
+        <p>Begin your real beauty journey here</p>
+      </div>
+
+      <div class="footer-middle">
+        <h1>Explore More</h1>
+        <ul class="footer-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="tips.html">Tips & Trends</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
